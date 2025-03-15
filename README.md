@@ -7,6 +7,8 @@ Untuk menjalankan tes algoritma:
 cd algorithm
 node no1.js
 node no2.js
+node no3.js
+node no4.js
 ```
 
 ## NestJS Library Backend
