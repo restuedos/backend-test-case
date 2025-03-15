@@ -2,10 +2,10 @@
 
 ## Requirements
 
-- [ ]  it should be use [NestJS](https://nestjs.com/) Framework Or [ExpressJS](https://expressjs.com/) With **TypeScript**
 - [ ]  it should be use Swagger as API Documentation
 - [ ]  it should be use Database (SQL/NoSQL)
 - [ ]  it should be open sourced on your github repo
+- [x]  it should be use [NestJS](https://nestjs.com/) Framework Or [ExpressJS](https://expressjs.com/) With **TypeScript**
 
 ## Extras
 
