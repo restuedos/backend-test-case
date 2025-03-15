@@ -3,6 +3,7 @@ import { BookService } from './application/services/book.service';
 import { MemberService } from './application/services/member.service';
 import { BorrowService } from './application/services/borrow.service';
 import { BookController } from './interfaces/controllers/book.controller';
+import { MemberController } from './interfaces/controllers/member.controller';
 import { PrismaService } from './infrastructure/prisma/prisma.service';
 import { BookRepository } from './infrastructure/repositories/book.repository';
 import { MemberRepository } from './infrastructure/repositories/member.repository';
@@ -10,7 +11,7 @@ import { BorrowRepository } from './infrastructure/repositories/borrow.repositor
 
 @Module({
   imports: [],
-  controllers: [BookController],
+  controllers: [BookController, MemberController],
   providers: [
     PrismaService,
     BookService,
