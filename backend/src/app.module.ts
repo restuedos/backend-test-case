@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { PrismaService } from './infrastructure/prisma/prisma.service';
 import { BookRepository } from './infrastructure/repositories/book.repository';
 import { MemberRepository } from './infrastructure/repositories/member.repository';
+import { BorrowRepository } from './infrastructure/repositories/borrow.repository';
 
 @Module({
   imports: [],
@@ -14,6 +15,10 @@ import { MemberRepository } from './infrastructure/repositories/member.repositor
     {
       provide: 'IMemberRepository',
       useClass: MemberRepository,
+    },
+    {
+      provide: 'IBorrowRepository',
+      useClass: BorrowRepository,
     },
   ],
 })
