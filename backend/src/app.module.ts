@@ -1,5 +1,6 @@
 import { Module } from '@nestjs/common';
 import { BookService } from './application/services/book.service';
+import { MemberService } from './application/services/member.service';
 import { PrismaService } from './infrastructure/prisma/prisma.service';
 import { BookRepository } from './infrastructure/repositories/book.repository';
 import { MemberRepository } from './infrastructure/repositories/member.repository';
@@ -10,6 +11,7 @@ import { BorrowRepository } from './infrastructure/repositories/borrow.repositor
   providers: [
     PrismaService,
     BookService,
+    MemberService,
     {
       provide: 'IBookRepository',
       useClass: BookRepository,
